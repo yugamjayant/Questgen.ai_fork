@@ -125,12 +125,12 @@ class QGen:
         final_output = {}
 
         if len(keyword_sentence_mapping.keys()) == 0:
-            print('ZERO')
+            #print('ZERO')
             return final_output
         else:
             
             generated_questions = generate_normal_questions(keyword_sentence_mapping,self.device,self.tokenizer,self.model)
-            print(generated_questions)
+            #print(generated_questions)
 
             
         final_output["statement"] = modified_text
